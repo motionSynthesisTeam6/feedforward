@@ -11,8 +11,7 @@ class Feedforward(nn.Module):
             nn.ReLU(inplace=True),
             nn.Conv1d(64, 128,  kernel_size = 25, padding = 12,bias=True),
             nn.ReLU(inplace=True),
-            nn.Conv1d(128, 256 , kernel_size = 15, padding = 7, bias=True), 
-            nn.ReLU(inplace=True),
+            nn.Conv1d(128, 256 , kernel_size = 15, padding = 7, bias=True),
             nn.MaxPool1d(2),
             nn.ReLU(inplace=True),  
         )
